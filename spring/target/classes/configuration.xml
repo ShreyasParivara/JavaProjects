@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+        <bean class="com.te.spring.autowore.Laptop" autowire="constructor"  ></bean>
+        <bean id="b" class="com.te.spring.autowore.Battery"></bean>
+        <bean id="s" class="com.te.spring.autowore.Screen"></bean>
+        
+        <bean id="hd1" class="com.te.spring.autowore.HardDisk">
+        <property name="name" value="Seagate"></property>
+        </bean>
+        <bean id="hd2" class="com.te.spring.autowore.HardDisk">
+        <property name="name" value="Sandisk"></property>
+        </bean>
+        
+       <!--    <bean class="com.te.spring.autowore.Laptop" autowire="byType"  ></bean>
+        <bean  class="com.te.spring.autowore.Battery"></bean>
+        <bean  class="com.te.spring.autowore.Screen"></bean> -->
+
+   
+   
+    
+
+</beans>
